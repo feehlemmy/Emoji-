@@ -135,18 +135,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Controle.cpp" />
+    <ClCompile Include="AjudaAlgoritmo.cpp" />
+    <ClCompile Include="AlgoritmoFatorial.cpp" />
+    <ClCompile Include="AlgoritmoMedia.cpp" />
+    <ClCompile Include="Compilador.cpp" />
+    <ClCompile Include="LinguagemFatorial.cpp" />
+    <ClCompile Include="LinguagemMedia.cpp" />
     <ClCompile Include="PrimeiraTela.cpp" />
     <ClCompile Include="Principal.cpp" />
+    <ClCompile Include="TelaErro.cpp" />
     <ClCompile Include="TelaEscolherModo.cpp" />
+    <ClCompile Include="TelaFinal.cpp" />
+    <ClCompile Include="TelaSucesso.cpp" />
     <ClCompile Include="TelaTutorial.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Controle.h" />
+    <ClInclude Include="AjudaAlgoritmo.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AlgoritmoFatorial.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AlgoritmoMedia.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Compilador.h" />
+    <ClInclude Include="LinguagemFatorial.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="LinguagemMedia.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="PrimeiraTela.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="TelaErro.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="TelaEscolherModo.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaFinal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaSucesso.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="TelaTutorial.h">
@@ -154,15 +186,42 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AjudaAlgoritmo.resx">
+      <DependentUpon>AjudaAlgoritmo.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlgoritmoFatorial.resx">
+      <DependentUpon>AlgoritmoFatorial.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlgoritmoMedia.resx">
+      <DependentUpon>AlgoritmoMedia.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinguagemFatorial.resx">
+      <DependentUpon>LinguagemFatorial.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinguagemMedia.resx">
+      <DependentUpon>LinguagemMedia.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PrimeiraTela.resx">
       <DependentUpon>PrimeiraTela.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaErro.resx">
+      <DependentUpon>TelaErro.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaEscolherModo.resx">
       <DependentUpon>TelaEscolherModo.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TelaFinal.resx">
+      <DependentUpon>TelaFinal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaSucesso.resx">
+      <DependentUpon>TelaSucesso.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TelaTutorial.resx">
       <DependentUpon>TelaTutorial.h</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\felip\Documents\fatorial.exe" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

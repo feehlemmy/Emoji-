@@ -1,20 +1,19 @@
-//#include "Controle.h"
-
+#include "PrimeiraTela.h"
+#include "AlgoritmoMedia.h"
 using namespace System;
 using namespace System::Windows::Forms;
+
 
 [STAThread]
 int main(array<String^>^arg){
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
 
-	//Controle control;
+	// Instaciar as Telas
+	Emoji::PrimeiraTela firstscreen;
 
-//	control.gerenciarExecucao();
+	Application::Run(%firstscreen);
 
 	return 0;
-
-
-
 }
 
